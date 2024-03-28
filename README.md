@@ -37,3 +37,11 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+### Average case explanation
+
+since the outer for loop always runs $n$ times and the inner loop runs only when elements need swapped, we can </br>
+assume that half the time it swaps and half the time it doesn't because if the best case is constant and the worst case is </br>
+$n^2$, then the average case for the inner loop is $n/2$ </br> </br>
+if we put this together then we get $n(n/2)$ or $n^2 /2$. Since this is an asymptotic analysis and we ignore constants, </br>
+the average case is $\Theta (n^2)$
